@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" tools:context="com.example.cc.day1212.MainActivity">
+
+    <android.support.v4.view.ViewPager
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:id="@+id/vp"></android.support.v4.view.ViewPager>
+
+    <!-- 用来存放 小圆点  Imageview  viewgroup.addView -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/linpoint"
+        android:gravity="center"
+        android:layout_alignBottom="@+id/vp">
+
+    </LinearLayout>
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rg"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="16dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:layout_height="wrap_content"
+            android:text="首页"
+            />
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:layout_height="wrap_content"
+            android:text="发现"
+            />
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:layout_height="wrap_content"
+            android:text="发布"
+            />
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:layout_height="wrap_content"
+            android:text="消息"
+            />
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:layout_height="wrap_content"
+            android:text="我的"
+            />
+
+
+    </RadioGroup>
+
+</RelativeLayout>
